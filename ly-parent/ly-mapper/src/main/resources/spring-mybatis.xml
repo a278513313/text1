@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 数据库连接池 -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          destroy-method="close">
+        <property name="url" value="jdbc:oracle:thin:@192.168.211.139:1521:orcl" />
+        <property name="username" value="ssm54" />
+        <property name="password" value="ssm54" />
+        <property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+    </bean>
+
+    <!--
+        2)SqlSessionFactoryBean
+    -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--指定数据源-->
+        <property name="dataSource" ref="dataSource" />
+        <!-- 注意其他配置 -->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <!--使用下面的方式配置参数，一行配置一个 -->
+                        <props>
+                            <prop key="helperDialect">oracle</prop>
+                            <prop key="reasonable">true</prop>
+                        </props>
+                    </property>
+                </bean>
+            </array>
+        </property>
+    </bean>
+
+    <!--
+        3)dao接口扫扫描
+    -->
+    <bean id="scannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--指定Dao接口包-->
+        <property name="basePackage" value="com.itheima.mapper" />
+    </bean>
+
+</beans>

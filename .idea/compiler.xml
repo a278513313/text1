@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ly-mapper" />
+        <module name="ly-model" />
+        <module name="ly-service" />
+        <module name="ly-utils" />
+        <module name="ly-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="ly-mapper" target="1.8" />
+      <module name="ly-model" target="1.8" />
+      <module name="ly-parent" target="1.8" />
+      <module name="ly-service" target="1.8" />
+      <module name="ly-utils" target="1.8" />
+      <module name="ly-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

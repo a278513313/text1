@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SSM.iml" filepath="$PROJECT_DIR$/.idea/SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-parent/ly-mapper/ly-mapper.iml" filepath="$PROJECT_DIR$/ly-parent/ly-mapper/ly-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-parent/ly-model/ly-model.iml" filepath="$PROJECT_DIR$/ly-parent/ly-model/ly-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-parent/ly-parent.iml" filepath="$PROJECT_DIR$/ly-parent/ly-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-parent/ly-service/ly-service.iml" filepath="$PROJECT_DIR$/ly-parent/ly-service/ly-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-parent/ly-utils/ly-utils.iml" filepath="$PROJECT_DIR$/ly-parent/ly-utils/ly-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-parent/ly-web/ly-web.iml" filepath="$PROJECT_DIR$/ly-parent/ly-web/ly-web.iml" />
+    </modules>
+  </component>
+</project>
